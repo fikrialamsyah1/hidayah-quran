@@ -80,13 +80,9 @@ const Contact = () => {
         description="Silakan sampaikan kritik dan saran."
       />
 
-
-<AspectRatio ratio={16 / 33}>
-  <iframe
-    src='https://quran.com'
-    alt='demo'
-  />
-</AspectRatio>
+      <AspectRatio ratio={16 / 33}>
+        <iframe src="https://quran.com" />
+      </AspectRatio>
     </>
   );
 };

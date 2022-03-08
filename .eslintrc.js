@@ -22,14 +22,19 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'prettier/prettier': ['off', {
+      endOfLine: 'auto'
+    }],
     'react/boolean-prop-naming': [
       'error',
-      { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+', validateNested: true },
+      {
+        rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
+        validateNested: true
+      },
     ],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    'react/sort-comp': ['error'],
+    'react/sort-comp': ['off'],
     'react/sort-prop-types': [
       'error',
       {
@@ -41,7 +46,7 @@ module.exports = {
       },
     ],
     'sort-imports': [
-      'error',
+      'off',
       {
         allowSeparatedGroups: true,
         ignoreCase: true,
@@ -49,7 +54,9 @@ module.exports = {
         ignoreMemberSort: false,
       },
     ],
-    'sort-vars': ['error', { ignoreCase: true }],
+    'sort-vars': ['off', {
+      ignoreCase: true
+    }],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
   },
