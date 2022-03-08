@@ -84,7 +84,6 @@ const Contact = () => {
 <AspectRatio ratio={16 / 33}>
   <iframe
     src='https://quran.com'
-    alt='demo'
   />
 </AspectRatio>
     </>
